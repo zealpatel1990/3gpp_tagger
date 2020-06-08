@@ -1,0 +1,27 @@
+[
+  {
+    "pattern_type": "Actor",
+    "strategy": "pattern_match",
+    "dictionary": [
+      "ue",
+      "enodeb"
+    ]
+  },
+  {
+    "pattern_type": "Args",
+    "strategy": "span_match",
+    "dictionary": [],
+    "span_match": {
+      "start_span_match": "(",
+      "end_span_match": ")"
+    }
+  },
+  {
+    "pattern_type": "Message",
+    "strategy": "pattern_match",
+    "dictionary": [
+      "tau request"
+    ]
+  }
+
+]

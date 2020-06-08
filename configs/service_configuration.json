@@ -1,0 +1,12 @@
+[
+  {
+    "api": "get_project_setting",
+    "endpoint": "https://www.tagtog.net/-api/settings/v1/export",
+    "params": {
+      "owner": "charantej",
+      "project": "tagging_project"
+    },
+    "username": "charantej",
+    "password": "Password*01"
+  }
+]
