@@ -1,0 +1,153 @@
+{
+  "annotatable": {
+    "parts": [
+      "s1v1"
+    ]
+  },
+  "anncomplete": false,
+  "sources": [],
+  "metas": {},
+  "entities": [
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 63,
+          "text": "TAU Request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "user:charantej"
+        ],
+        "prob": 1
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_2",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 75,
+          "text": "(UE Core Network Capability, MS Network Capability, Preferred Network behaviour, Support for restriction of use of Enhanced Coverage, old GUTI, Old GUTI type, last visited TAI, active flag, signalling active flag, EPS bearer status, PTMSI Signature, additional GUTI, eKSI, NAS sequence number, NAS-MAC, KSI, Voice domain preference and UE's usage setting)"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "user:charantej"
+        ],
+        "prob": 1
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 3109,
+          "text": "TAU Request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "ml:regex"
+        ],
+        "prob": 0
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 3543,
+          "text": "TAU Request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "ml:regex"
+        ],
+        "prob": 0
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 3778,
+          "text": "TAU Request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "ml:regex"
+        ],
+        "prob": 0
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 3926,
+          "text": "TAU request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "ml:regex"
+        ],
+        "prob": 0
+      },
+      "fields": {},
+      "normalizations": {}
+    },
+    {
+      "classId": "e_3",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 4073,
+          "text": "TAU Request"
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "ml:regex"
+        ],
+        "prob": 0
+      },
+      "fields": {},
+      "normalizations": {}
+    }
+  ],
+  "relations": []
+}
