@@ -25,8 +25,8 @@ def verbatim_annotate():
               "output": "null"}
 
     files = [
-        ("plain", open(resolve_path_from_project_dir('configs/input_data.txt'))),
-        ("ann.json", open(resolve_path_from_project_dir('configs/verb_ann.json')))
+        ("input_data.txt", open(resolve_path_from_project_dir('configs/input_data.txt'))),
+        ("input_data.ann.json", open(resolve_path_from_project_dir('configs/verb_ann.json')))
     ]
     response = requests.post(tagtogAPIUrl, params=params, auth=auth, files=files)
     print(response.text)
