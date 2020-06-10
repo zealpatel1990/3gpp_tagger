@@ -25,10 +25,10 @@
     "api": "push_annotated_text_verbatim",
     "endpoint": "https://www.tagtog.net/-api/documents/v1",
     "params": {
-      "owner": "charantej",
       "project": "tagging_project",
-      "output": "null",
-      "format": "verbatim-plus-annjson"
+      "owner": "charantej",
+      "format": "verbatim-plus-annjson",
+      "output": "null"
     },
     "username": "charantej",
     "password": "Password*01"
