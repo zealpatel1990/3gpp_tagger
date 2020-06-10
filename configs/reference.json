@@ -1,0 +1,33 @@
+{
+  "annotatable": {
+    "parts": [
+      "s1v1"
+    ]
+  },
+  "anncomplete": false,
+  "sources": [],
+  "metas": {},
+  "entities": [
+    {
+      "classId": "",
+      "part": "s1v1",
+      "offsets": [
+        {
+          "start": 0,
+          "text": ""
+        }
+      ],
+      "coordinates": [],
+      "confidence": {
+        "state": "pre-added",
+        "who": [
+          "user:charantej"
+        ],
+        "prob": 1
+      },
+      "fields": {},
+      "normalizations": {}
+    }
+  ],
+  "relations": []
+}
