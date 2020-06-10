@@ -47,4 +47,4 @@ class DocumentService:
 if __name__ == '__main__':
     doc_service = DocumentService()
     # doc_service.push_verbatim_text('configs/input_data.txt')
-    doc_service.push_annotated_text('configs/verb_ann.json', 'configs/input_data.txt', verbatim=True)
+    doc_service.push_annotated_text('configs/input_data.ann.json', 'configs/input_data.txt', verbatim=True)
