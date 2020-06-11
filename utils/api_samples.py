@@ -32,5 +32,21 @@ def verbatim_annotate():
     print(response.text)
 
 
+def test_string_structure(input_string):
+    start = 0
+    end = 0
+    for each in input_string.split('.'):
+        end = start + len(each)
+        print(f'{start} , {end} - {each}')
+        start = 1 + end
+
+
+def word_find_word():
+    word = 'geeks for Geeks'.lower()
+    # returns first occurrence of Substring
+    result = word.find('charans')
+    print("Substring 'geeks' found at index:", result)
+
+
 if __name__ == '__main__':
-    verbatim_annotate()
+    word_find_word()
