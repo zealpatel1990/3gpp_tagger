@@ -1,6 +1,7 @@
 [
   {
     "pattern_type": "Actor",
+    "function": "match_pattern",
     "strategy": "pattern_match",
     "dictionary": [
       "ue",
@@ -9,6 +10,7 @@
   },
   {
     "pattern_type": "Args",
+    "function": "match_span",
     "strategy": "span_match",
     "dictionary": [],
     "span_match": {
@@ -18,10 +20,10 @@
   },
   {
     "pattern_type": "Message",
+    "function": "match_pattern",
     "strategy": "pattern_match",
     "dictionary": [
       "tau request"
     ]
   }
-
 ]
