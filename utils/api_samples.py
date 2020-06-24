@@ -2,6 +2,9 @@ import requests
 
 from utils.file_utils import get_text_from_file
 from utils.path_finder import resolve_path_from_project_dir
+import torch
+import torch.nn as nn
+import spacy
 
 
 def upload_verbatim_text():
@@ -48,5 +51,29 @@ def word_find_word():
     print("Substring 'geeks' found at index:", result)
 
 
+def spacy_token():
+    torch.manual_seed(1)
+    word_to_ix = {"hello": 0, "world": 1}
+    embeds = nn.Embedding(2, 5)  # 2 words in vocab, 5 dimensional embeddings
+    lookup_tensor = torch.tensor([word_to_ix["hello"]], dtype=torch.long)
+    hello_embed = embeds(lookup_tensor)
+    print(hello_embed)
+
+
+def word_embeddings(sentence):
+    en = spacy.load('en')
+    return en(sentence)
+
+
 if __name__ == '__main__':
-    word_find_word()
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('integers', metavar='N', type=int, nargs='+',
+                        help='an integer for the accumulator')
+    parser.add_argument('--sum', dest='accumulate', action='store_const',
+                        const=sum, default=max,
+                        help='sum the integers (default: find the max)')
+
+    args = parser.parse_args()
+    print(args.accumulate(args.integers))

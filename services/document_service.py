@@ -37,8 +37,8 @@ class DocumentService:
         service = get_service_config('push_annotated_text_verbatim')
         service_auth, service_params, service_endpoint = get_auth_params(service)
         files = [
-            ("plain", open(resolve_path_from_project_dir(text_file))),
-            ("ann.json", open(resolve_path_from_project_dir(annotation_file)))
+            ("plain", open(text_file)),
+            ("ann.json", open(annotation_file))
         ]
         response = requests.post(service_endpoint, params=service_params, auth=service_auth, files=files)
         print(response.text)

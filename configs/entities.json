@@ -1,0 +1,150 @@
+{
+  "meta" : "entities",
+  "acronyms" : {
+    "ADC" : "Application Detection and Control",
+    "BAR" : "Buffering Action Rule",
+    "CP" :  "Control Plane",
+    "DDoS" :    "Distributed Denial of Service",
+    "DEI" :   "Drop Eligible Indicator",
+    "DSCP" :   "Differentiated Services Code Point",
+    "eMPS" :    "enhanced Multimedia Priority Service",
+    "FAR"  :  "Forwarding Action Rule",
+    "F-SEID" :    "Fully Qualified SEID",
+    "F-TEID" :    "Fully Qualified TEID",
+    "IP" :    "Internet Protocol",
+    "IPv4" :   "Internet Protocol version 4",
+    "IPv6" : "Internet Protocol version 6",
+    "LMISF" : "LI Mirror IMS State Function",
+    "NR" : "New Radio",
+    "PCC" : "Policy and Charging Control",
+    "PCP" : "Priority Code Point",
+    "PCEF" : "Policy and Charging Enforcement Function",
+    "PCRF" : "Policy and Charging Rule Function",
+    "PDI" : "Packet Detection Information",
+    "PDR" : "Packet Detection Rule",
+    "PFCP" : "Packet Forwarding Control Protocol",
+    "PFD" : "Packet Flow Description",
+    "PGW" : "PDN Gateway",
+    "PGW-C" : "PDN Gateway Control plane function",
+    "PGW-U" : "PDN Gateway User plane function",
+    "QER" : "QoS Enforcement Rule",
+    "S8HR" : "S8 Home Routed",
+    "SDF" : "Service Data Flow",
+    "SEID" : "Session Endpoint Identifier",
+    "SGW" : "Serving Gateway",
+    "SGW-C" : "Serving Gateway Control plane function",
+    "SGW-U" : "Serving Gateway User plane function",
+    "SX3LIF" : "Split X3 LI Interworking Function",
+    "TDF" : "Traffic Detection Function",
+    "TDF-C" : "Traffic Detection Function Control plane function",
+    "TDF-U" : "Traffic Detection Function User plane function",
+    "ToS" : "Type of Service",
+    "TSSF" : "Traffic Steering Support Function",
+    "UDP" : "User Datagram Protocol",
+    "UP" : "User Plane",
+    "URR" : "Usage Reporting Rule",
+    "VID" : "VLAN Identifier",
+    "SIPTO" : "Selected IP Traffic Offload"
+  },
+  "entities" : {
+    "E-UTRAN" : {
+      "dtype" : "actor",
+      "acronyms" : [ "Evolved Universal Terrestrial Radio Access Network", "eNB", "eNodeB" ],
+      "interfaces" : [ "S1-U", "S1-MME", "Uu" ],
+      "components" : [ "eNB" ]
+    },
+    "MME" : {
+      "dtype" : "actor",
+      "acronyms" : [ "Mobility Management Entity" ],
+      "interfaces" : [ "M3", "S3", "S10", "S11", "S6a", "S1-MME" , "S4", "T6a", "SGs", "S11-U", "SGd", "SLg", "Sm", "SLs" ],
+      "self-interfaces" : [ "S10" ]
+    },
+    "SGW" : {
+      "dtype" : "actor",
+      "acronyms" : [ "Serving Gateway", "S-GW" ],
+      "interfaces" : [ "S11", "S1-U", "S11-U", "S5/S8", "S5", "S8", "Gxc", "S5/S8-C", "S5-C", "S8-C", "S5/S8-U", "S5-U", "S8-U" ]
+    },
+    "PGW" : {
+      "dtype" : "actor",
+      "acronyms" : [ "PDN Gateway", "P-GW" ],
+      "interfaces" : [ "S5/S8", "S5", "S8", "Gx", "Gy", "Gz", "SGi", "S5/S8-C", "S5-C", "S8-C", "S5/S8-U", "S5-U", "S8-U" ]
+    },
+    "SAEGW" : {
+      "dtype" : "actor",
+      "acronyms" : [ "SAE Gateway", "SAE-GW" ],
+      "interfaces" : [ "S11", "S1-U", "S11-U", "Gxc", "S5/S8", "S5", "S8", "Gx", "Gy", "Gz", "SGi", "S5/S8-C", "S5-C", "S8-C", "S5/S8-U", "S5-U", "S8-U" ],
+      "interface-synsets" : [ "SGW", "PGW" ]
+    },
+    "PCRF" : {
+      "dtype" : "actor",
+      "acronyms" : [ "Policy and Charging Rule Function" ],
+      "interfaces" : [ "Gx", "Gxc", "Sy", "S9", "Rx", "Sd" ]
+    },
+    "SGW-U" : {
+      "dtype" : "actor",
+      "acronyms" : [ "SGW User Plane", "S-GW User Plane" ],
+      "interfaces" : [ "S1-U", "S11-U", "Sxa" ],
+      "interface-synsets" : [ "SGW" ]
+    },
+    "SGW-C" : {
+      "dtype" : "actor",
+      "acronyms" : [ "SGW Control Plane", "S-GW Control Plane"  ],
+      "interfaces" : [ "S11", "S11-U", "S5/S8", "S5", "S8", "Gxc", "Sxa" ],
+      "interface-synsets" : [ "SGW" ]
+    },
+    "PGW-U" : {
+      "dtype" : "actor",
+      "acronyms" : [ "PGW User Plane", "P-GW User Plane" ],
+      "interfaces" : [ "S5/S8", "S5", "S8", "SGi", "S5/S8-U", "S5-U", "S8-U" ],
+      "interface-synsets" : [ "PGW" ]
+    },
+    "PGW-C" : {
+      "dtype" : "actor",
+      "acronyms" : [ "PGW Control Plane", "P-GW Control Plane" ],
+      "interfaces" : [ "S5/S8", "S5", "S8", "Gx", "Gy", "Gz", "S5/S8-C", "S5-C", "S8-C" ],
+      "interface-synsets" : [ "PGW" ]
+    },
+    "SAEGW-C" : {
+      "dtype" : "actor",
+      "acronyms" : [ "SAE Gateway Control Plane", "SAE-GW Control Plane" ],
+      "interfaces" : [ "S11", "S11-U", "Gxc", "S5/S8", "S5", "S8", "Gx", "Gy", "Gz",  "S5/S8-C", "S5-C", "S8-C" ],
+      "interface-synsets" : [ "PGW", "PGW-C", "SGW", "SGW-C" ]
+    },
+    "SAEGW-U" : {
+      "dtype" : "actor",
+      "acronyms" : [ "SAE Gateway User Plane", "SAE-GW USer Plane" ],
+      "interfaces" : [ "S1-U", "S5/S8", "S5", "S8", "SGi", "S5/S8-U", "S5-U", "S8-U" ],
+      "interface-synsets" : [ "PGW", "PGW-U", "SGW", "SGW-U" ]
+    },
+    "UE" : {
+      "dtype" : "actor",
+      "acronyms" : [ "User Equipment" ],
+      "interfaces" : [ "Uu" ],
+      "timers" : [ "Service Gap" ]
+    },
+    "HSS" : {
+      "dtype" : "actor",
+      "acronyms" : [ "Home Subscriber System" ],
+      "interfaces" : [ "S6a", "S13", "S6t", "S6m", "S6n", "Cx", "Sh", "S6d",
+          "S13'", "Gr", "SLh", "Sp", "S6c", "D", "D'", "SWx/Wx", "SWx", "Wx" ]
+    }
+  },
+  "features" : [
+    "WB-E-UTRAN",
+    "NB-IoT",
+    "LIPA",
+    "SIPTO",
+    "MTC",
+    "NIDD",
+    "MPS",
+    "DCN",
+    "LAA",
+    "LWA",
+    "LWIP",
+    "CIoT",
+    "attach without PDN connectivity",
+    "Control Plane CIoT EPS Optimisation",
+    "User Plane CIoT EPS Optimisation",
+    "EPS Attach without PDN Connectivity"
+  ]
+}

@@ -32,18 +32,20 @@ class AutoTagProcessor:
                     self.process_strategy(each_tag_strategy, each_sentence, index)
 
     def process_strategy(self, each_tag_strategy, each_sentence, index):
-        print(f'{each_sentence} -  {index} - {each_tag_strategy}')
+        # print(f'{each_sentence} -  {index} - {each_tag_strategy}')
         entity = copy.deepcopy(self.reference_entity_json)
         entity['offsets'][0]['start'], entity['offsets'][0]['text'], entity[
             'classId'] = self.rules_tagger.call_strategy(each_tag_strategy,
                                                          each_sentence, index)
-        self.reference_json['entities'].append(entity)
+        if entity['offsets'][0]['start'] > 0:
+            self.reference_json['entities'].append(entity)
 
     def write_annotation_text(self):
         output_text_file = resolve_path_from_project_dir(os.path.join('configs', self.target_name + '.txt'))
         output_ann_file = resolve_path_from_project_dir(os.path.join('configs', self.target_name + '.ann.json'))
         write_json_to_file(self.reference_json, output_ann_file)
         write_text_to_file(self.input, output_text_file)
+        return output_text_file, output_ann_file
 
 
 if __name__ == '__main__':
