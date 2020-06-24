@@ -37,7 +37,7 @@ class AutoTagProcessor:
         entity['offsets'][0]['start'], entity['offsets'][0]['text'], entity[
             'classId'] = self.rules_tagger.call_strategy(each_tag_strategy,
                                                          each_sentence, index)
-        if entity['offsets'][0]['start'] > 0:
+        if entity['offsets'][0]['start'] > 0 and entity['offsets'][0]['text'] is not None:
             self.reference_json['entities'].append(entity)
 
     def write_annotation_text(self):

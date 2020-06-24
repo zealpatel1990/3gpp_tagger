@@ -13,26 +13,6 @@
                   "part": "s1v1",
                   "offsets": [
                         {
-                              "start": 35,
-                              "text": null
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
                               "start": 117,
                               "text": "with active radio bearers)"
                         }
@@ -75,26 +55,6 @@
                         {
                               "start": 123,
                               "text": ""
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 88,
-                              "text": null
                         }
                   ],
                   "coordinates": [],
@@ -269,26 +229,6 @@
                   "normalizations": {}
             },
             {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 357,
-                              "text": null
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
                   "classId": "e_1",
                   "part": "s1v1",
                   "offsets": [
@@ -353,26 +293,6 @@
                   "part": "s1v1",
                   "offsets": [
                         {
-                              "start": 121,
-                              "text": null
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
                               "start": 306,
                               "text": "for split bearers)"
                         }
@@ -415,26 +335,6 @@
                         {
                               "start": 100,
                               "text": "ue"
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 338,
-                              "text": null
                         }
                   ],
                   "coordinates": [],
@@ -515,26 +415,6 @@
                         {
                               "start": 85,
                               "text": "ue"
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 349,
-                              "text": null
                         }
                   ],
                   "coordinates": [],
@@ -1289,26 +1169,6 @@
                   "normalizations": {}
             },
             {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 181,
-                              "text": null
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
                   "classId": "e_1",
                   "part": "s1v1",
                   "offsets": [
@@ -1535,26 +1395,6 @@
                         {
                               "start": 183,
                               "text": "ue"
-                        }
-                  ],
-                  "coordinates": [],
-                  "confidence": {
-                        "state": "pre-added",
-                        "who": [
-                              "user:charantej"
-                        ],
-                        "prob": 1
-                  },
-                  "fields": {},
-                  "normalizations": {}
-            },
-            {
-                  "classId": "e_2",
-                  "part": "s1v1",
-                  "offsets": [
-                        {
-                              "start": 203,
-                              "text": null
                         }
                   ],
                   "coordinates": [],
