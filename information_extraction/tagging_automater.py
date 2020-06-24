@@ -7,9 +7,9 @@ import os
 
 
 class AutoTagProcessor:
-    def __init__(self, input_text, target_name):
+    def __init__(self, input_file, target_name):
         self.target_name = target_name
-        self.input = input_text
+        self.input = get_text_from_file(input_file)
         self.rules_config = json.load(open(resolve_path_from_project_dir('configs/rules.json')))
         self.priority_configs = json.load(open(resolve_path_from_project_dir('configs/processing_priority.json')))
         self.reference_json = json.load(open(resolve_path_from_project_dir('configs/reference.json')))
@@ -23,7 +23,7 @@ class AutoTagProcessor:
         for each_sentence in self.input.split("."):
             self.tag_sentence(each_sentence, index)
             index = 1 + len(each_sentence)
-        self.write_annotation_text()
+        return self.write_annotation_text()
 
     def tag_sentence(self, each_sentence, index):
         for priority in self.priority_configs:

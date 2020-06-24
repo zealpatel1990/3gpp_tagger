@@ -1,53 +1,1593 @@
 {
-  "annotatable": {
-    "parts": [
-      "s1v1"
-    ]
-  },
-  "anncomplete": false,
-  "sources": [],
-  "metas": {},
-  "entities": [
-    {
-      "classId": "e_2",
-      "part": "s1v1",
-      "offsets": [
-        {
-          "start": 39,
-          "text": "this is really testing crap)"
-        }
-      ],
-      "coordinates": [],
-      "confidence": {
-        "state": "pre-added",
-        "who": [
-          "user:charantej"
-        ],
-        "prob": 1
+      "annotatable": {
+            "parts": [
+                  "s1v1"
+            ]
       },
-      "fields": {},
-      "normalizations": {}
-    },
-    {
-      "classId": "e_1",
-      "part": "s1v1",
-      "offsets": [
-        {
-          "start": 8,
-          "text": "ue"
-        }
+      "anncomplete": false,
+      "sources": [],
+      "metas": {},
+      "entities": [
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 35,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 117,
+                              "text": "with active radio bearers)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 70,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 123,
+                              "text": ""
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 88,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 26,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 398,
+                              "text": "s)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 261,
+                              "text": "either signalled from the hss, or, locally generated by vplmn policy in the mme)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 51,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 64,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 8,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 15,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 330,
+                              "text": "s)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 357,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 102,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 273,
+                              "text": "as specified for any serving enb)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 139,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 121,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 306,
+                              "text": "for split bearers)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 180,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 100,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 338,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 114,
+                              "text": ""
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 309,
+                              "text": "h)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 124,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 85,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 349,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 109,
+                              "text": "s)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 249,
+                              "text": "s)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 138,
+                              "text": "mtu)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 186,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 117,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 67,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 96,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 31,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 56,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 30,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 44,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 5,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 59,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 19,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 49,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 41,
+                              "text": "including the cases when the ue is camped on geran/utran cells)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 8,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 52,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 175,
+                              "text": "or returns to coverage in geran/utran)"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 31,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 8,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 56,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 8,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 54,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 110,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 5,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 218,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 107,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 14,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 63,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 49,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 117,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 44,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 63,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 47,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 49,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 18,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 181,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 84,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 150,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 59,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 140,
+                              "text": "a \"list\")"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 29,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 65,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 110,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 37,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 75,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 13,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 15,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 183,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_2",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 203,
+                              "text": null
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            },
+            {
+                  "classId": "e_1",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 63,
+                              "text": "ue"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charantej"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
+            }
       ],
-      "coordinates": [],
-      "confidence": {
-        "state": "pre-added",
-        "who": [
-          "user:charantej"
-        ],
-        "prob": 1
-      },
-      "fields": {},
-      "normalizations": {}
-    }
-  ],
-  "relations": []
+      "relations": []
 }
