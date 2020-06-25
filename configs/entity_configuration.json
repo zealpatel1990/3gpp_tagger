@@ -1,35 +1,35 @@
 {
-    "e_1": {
-        "color": "#4cffbd",
-        "description": "",
-        "fields": {},
-        "id": "e_1",
-        "modelid": null,
-        "name": "Actor",
-        "normalizations": {},
-        "oldnames": [],
-        "original": true
-    },
-    "e_2": {
-        "color": "#fccefb",
-        "description": "",
-        "fields": {},
-        "id": "e_2",
-        "modelid": null,
-        "name": "Args",
-        "normalizations": {},
-        "oldnames": [],
-        "original": true
-    },
-    "e_3": {
-        "color": "#f5c527",
-        "description": "",
-        "fields": {},
-        "id": "e_3",
-        "modelid": null,
-        "name": "Message",
-        "normalizations": {},
-        "oldnames": [],
-        "original": true
-    }
+  "e_1": {
+    "id": "e_1",
+    "name": "Actor",
+    "oldnames": [],
+    "description": "",
+    "color": "#4cffbd",
+    "modelid": null,
+    "original": true,
+    "fields": {},
+    "normalizations": {}
+  },
+  "e_2": {
+    "id": "e_2",
+    "name": "Args",
+    "oldnames": [],
+    "description": "",
+    "color": "#fccefb",
+    "modelid": null,
+    "original": true,
+    "fields": {},
+    "normalizations": {}
+  },
+  "e_3": {
+    "id": "e_3",
+    "name": "Message",
+    "oldnames": [],
+    "description": "",
+    "color": "#f5c527",
+    "modelid": null,
+    "original": true,
+    "fields": {},
+    "normalizations": {}
+  }
 }

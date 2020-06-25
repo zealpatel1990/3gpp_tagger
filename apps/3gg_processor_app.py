@@ -13,4 +13,4 @@ if __name__ == '__main__':
     text_file_path, ann_file_path = auto_tag_processor.tag_words()
     # Using REST call to upload the data into Server.
     doc_service = DocumentService()
-    doc_service.push_annotated_verbatim_text(text_file_path, ann_file_path)
+    #doc_service.push_annotated_verbatim_text(text_file_path, ann_file_path)
