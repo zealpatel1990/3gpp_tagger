@@ -4,22 +4,24 @@ from utils.config_utils import get_class_from_name
 class RulesTagger:
 
     def process_span_match(self):
-        print("process span match")
+        # print("process span match")
         start_tag = self.strategy_config['span_match']['start_span_match']
         end_tag = self.strategy_config['span_match']['end_span_match']
         sentence_offset = self.start_index
-        return_start_index = -1
-        return_end_index = -1
+        return_start_index, return_end_index, return_text = -1, -1, None
         return_class = get_class_from_name(self.strategy_config['pattern_type'])
-        return_text = None
         for char in self.input_sentence:
             sentence_offset = sentence_offset + 1
             if start_tag == char:
-                return_start_index = sentence_offset
+                return_start_index = sentence_offset - 1
             elif return_start_index >= 0 and char == end_tag:
                 return_end_index = sentence_offset
         if return_end_index > 0 and return_start_index > 0:
             return_text = self.input_sentence[return_start_index - self.start_index:return_end_index - self.start_index]
+        else:
+            return_start_index, return_end_index, return_text = -1, -1, None
+        if return_text is None or return_text == '':
+            return_start_index, return_end_index, return_text = -1, -1, None
         return return_start_index, return_text, return_class
 
     def process_pattern_match(self):
