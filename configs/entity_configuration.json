@@ -31,5 +31,16 @@
     "original": true,
     "fields": {},
     "normalizations": {}
+  },
+  "e_4": {
+    "id": "e_4",
+    "name": "Reference",
+    "oldnames": [],
+    "description": "",
+    "color": "#c2f4ff",
+    "modelid": null,
+    "original": true,
+    "fields": {},
+    "normalizations": {}
   }
 }

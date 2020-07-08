@@ -7,3 +7,11 @@ def get_class_from_name(input_name):
     for (key, value) in entity_config.items():
         if value['name'] == input_name:
             return key
+
+
+def get_index(value, input_list):
+    try:
+        index_value = input_list.index(value)
+    except ValueError:
+        index_value = -1
+    return index_value

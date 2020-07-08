@@ -16,7 +16,7 @@ class AutoTagProcessor:
         self.reference_entity_json = self.reference_json['entities'][0]
         self.reference_json['entities'].clear()
         self.entity_config = json.load(open(resolve_path_from_project_dir('configs/entity_configuration.json')))
-        self.rules_tagger = RulesTagger()
+        self.rules_tagger = RulesTagger(self.priority_configs)
 
     def tag_words(self):
         index = 0
@@ -26,19 +26,15 @@ class AutoTagProcessor:
         return self.write_annotation_text()
 
     def tag_sentence(self, each_sentence, index):
-        for priority in self.priority_configs:
-            for each_tag_strategy in self.rules_config:
-                if each_tag_strategy['pattern_type'] == priority['key']:
-                    self.process_strategy(each_tag_strategy, each_sentence, index)
+        annotation_list = self.rules_tagger.process_sentence(self.priority_configs, each_sentence, index)
+        self.prepare_annotation_file(annotation_list)
 
-    def process_strategy(self, each_tag_strategy, each_sentence, index):
+    def prepare_annotation_file(self, annotation_list):
         # print(f'{each_sentence} -  {index} - {each_tag_strategy}')
-        entity = copy.deepcopy(self.reference_entity_json)
-        entity['offsets'][0]['start'], entity['offsets'][0]['text'], entity[
-            'classId'] = self.rules_tagger.call_strategy(each_tag_strategy,
-                                                         each_sentence, index)
-        if entity['offsets'][0]['start'] > 0 and entity['offsets'][0]['text'] is not None:
-            self.reference_json['entities'].append(entity)
+        for each in annotation_list:
+            entity = copy.deepcopy(self.reference_entity_json)
+            entity['offsets'][0]['start'], entity['offsets'][0]['text'], entity[
+                'classId'] = each[0], each[1], each[2]
 
     def write_annotation_text(self):
         output_text_file = resolve_path_from_project_dir(os.path.join('configs', self.target_name + '.txt'))

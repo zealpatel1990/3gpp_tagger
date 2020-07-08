@@ -1,12 +1,13 @@
 import re
-import os
 import json
 
+from utils.config_utils import get_index
 from utils.path_finder import resolve_path_from_project_dir
 
 
 def remove_additional_spaces(input_data):
     input_data = re.sub(r'[^\x00-\x7F]+', ' ', input_data)
+    input_data = re.sub('\?', ' ', input_data)
     return re.sub('\s+', ' ', input_data)
 
 
@@ -17,12 +18,14 @@ def lemmatize_domain_data(input_data):
         f.close()
     acronym_dict = entity_dict['acronyms']
     for key, value in acronym_dict.items():
-        acronym_dict[key] = remove_additional_spaces(value.strip()).lower()
+        acronym_dict[key] = [remove_additional_spaces(each.strip()).lower() for each in value]
+    input_data = input_data.split()
     for key, value in acronym_dict.items():
-        if value in input_data:
-            print(input_data, value, key)
-            input_data = input_data.replace(value, key)
-    return input_data
+        for each in value:
+            index = get_index(each, input_data)
+            if index > -1:
+                input_data[index] = key
+    return " ".join(input_data)
 
 
 def pre_process_file(file_name):

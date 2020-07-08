@@ -1,5 +1,6 @@
 import requests
 
+from utils.config_utils import get_index
 from utils.file_utils import get_text_from_file
 from utils.path_finder import resolve_path_from_project_dir
 import torch
@@ -65,15 +66,12 @@ def word_embeddings(sentence):
     return en(sentence)
 
 
+def check_dict():
+    import re
+    p = re.compile("ts \d{2}\.\d{3} \[(\d+)\]")
+    for m in p.finditer('adfadf ts 36.300 [5]).sdfsd'):
+        print(m.start(), m.group())
+
+
 if __name__ == '__main__':
-    import argparse
-
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('integers', metavar='N', type=int, nargs='+',
-                        help='an integer for the accumulator')
-    parser.add_argument('--sum', dest='accumulate', action='store_const',
-                        const=sum, default=max,
-                        help='sum the integers (default: find the max)')
-
-    args = parser.parse_args()
-    print(args.accumulate(args.integers))
+    check_dict()

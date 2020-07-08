@@ -4,8 +4,21 @@
     "function": "process_pattern_match",
     "strategy": "pattern_match",
     "dictionary": [
-      "ue",
-      "enodeb"
+      "UE",
+      "ENODEB",
+      "E-UTRAN",
+      "MME",
+      "SGW",
+      "PGW",
+      "SAEGW",
+      "PCRF",
+      "SGW-U",
+      "SGW-C",
+      "PGW-U",
+      "PGW-C",
+      "SAEGW-U",
+      "UE",
+      "HSS"
     ]
   },
   {
@@ -24,6 +37,14 @@
     "strategy": "pattern_match",
     "dictionary": [
       "tau request"
+    ]
+  },
+  {
+    "pattern_type": "Reference",
+    "function": "regex_expression_match",
+    "strategy": "regex_match",
+    "dictionary": [
+      "ts \\d{2}\\.\\d{3} \\[(\\d+)\\]"
     ]
   }
 ]
