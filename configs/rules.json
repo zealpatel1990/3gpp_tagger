@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Actor": {
     "pattern_type": "Actor",
     "function": "process_pattern_match",
     "strategy": "pattern_match",
@@ -21,7 +21,7 @@
       "HSS"
     ]
   },
-  {
+  "Args": {
     "pattern_type": "Args",
     "function": "process_span_match",
     "strategy": "span_match",
@@ -31,7 +31,7 @@
       "end_span_match": ")"
     }
   },
-  {
+  "Message": {
     "pattern_type": "Message",
     "function": "process_pattern_match",
     "strategy": "pattern_match",
@@ -39,7 +39,7 @@
       "tau request"
     ]
   },
-  {
+  "Reference": {
     "pattern_type": "Reference",
     "function": "regex_expression_match",
     "strategy": "regex_match",
@@ -47,4 +47,4 @@
       "ts \\d{2}\\.\\d{3} \\[(\\d+)\\]"
     ]
   }
-]
+}

@@ -4,8 +4,9 @@ import re
 
 class RulesTagger:
 
-    def __init__(self, priority_configs):
+    def __init__(self, priority_configs, rules_config):
         self.priority_configs = priority_configs
+        self.rules_config = rules_config
 
     def process_span_match(self):
         # print("process span match")
@@ -24,9 +25,8 @@ class RulesTagger:
             return_text = self.input_sentence[return_start_index - self.start_index:return_end_index - self.start_index]
         else:
             return_start_index, return_end_index, return_text = -1, -1, None
-        if return_text is None or return_text == '':
-            return_start_index, return_end_index, return_text = -1, -1, None
-        self.return_list.append((return_start_index, return_text, return_class))
+        if not (return_text is None or return_text == ''):
+            self.return_list.append((return_start_index, return_text, return_class))
 
     def process_pattern_match(self):
         self.input_sentence = self.input_sentence
@@ -62,8 +62,7 @@ class RulesTagger:
         self.input_sentence = input_sentence
         self.start_index = start_index
         self.return_list = []
-        for priority in self.priority_configs:
-            for each_tag_strategy in self.rules_config:
-                if each_tag_strategy['pattern_type'] == priority['key']:
-                    self.call_strategy(each_tag_strategy, self.input_sentence, self.start_index)
+        for value in self.priority_configs:
+            each_tag_strategy = self.rules_config[value['key']]
+            self.call_strategy(each_tag_strategy, self.input_sentence, self.start_index)
         return self.return_list
