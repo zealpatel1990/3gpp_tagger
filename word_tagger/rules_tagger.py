@@ -8,6 +8,15 @@ class RulesTagger:
         self.priority_configs = priority_configs
         self.rules_config = rules_config
 
+    def handle_entity_load(self, entity_tuple, add_start_index=False):
+        if entity_tuple[0] < 1:
+            return
+        elif entity_tuple[1] is None or entity_tuple[1] == '':
+            return
+        if add_start_index:
+            entity_tuple = (entity_tuple[0] + self.start_index, entity_tuple[1], entity_tuple[2])
+        self.return_list.append(entity_tuple)
+
     def process_span_match(self):
         # print("process span match")
         start_tag = self.strategy_config['span_match']['start_span_match']
@@ -25,8 +34,7 @@ class RulesTagger:
             return_text = self.input_sentence[return_start_index - self.start_index:return_end_index - self.start_index]
         else:
             return_start_index, return_end_index, return_text = -1, -1, None
-        if not (return_text is None or return_text == ''):
-            self.return_list.append((return_start_index, return_text, return_class))
+        self.handle_entity_load((return_start_index, return_text, return_class))
 
     def process_pattern_match(self):
         self.input_sentence = self.input_sentence
@@ -36,7 +44,7 @@ class RulesTagger:
             return_text = each
             if return_start_index > 0:
                 break
-        self.return_list.append((return_start_index, return_text, return_class))
+        self.handle_entity_load((return_start_index, return_text, return_class), add_start_index=True)
 
     def regex_match(self):
         self.input_sentence = self.input_sentence
@@ -44,7 +52,7 @@ class RulesTagger:
         for each in self.strategy_config['dictionary']:
             p = re.compile(each)
             for m in p.finditer(self.input_sentence):
-                self.return_list.append((m.start(), m.group(), return_class))
+                self.handle_entity_load((m.start(), m.group(), return_class), add_start_index=True)
 
     def call_strategy(self, strategy_config, input_sentence, start_index):
         self.input_sentence = input_sentence
