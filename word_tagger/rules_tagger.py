@@ -52,7 +52,7 @@ class RulesTagger:
         for each in self.strategy_config['dictionary']:
             p = re.compile(each)
             for m in p.finditer(self.input_sentence):
-                self.handle_entity_load((m.start(), m.group(), return_class), add_start_index=True)
+                self.handle_entity_load((m.start(), m.group(), return_class))
 
     def call_strategy(self, strategy_config, input_sentence, start_index):
         self.input_sentence = input_sentence

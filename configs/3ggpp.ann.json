@@ -47,6 +47,26 @@
                   },
                   "fields": {},
                   "normalizations": {}
+            },
+            {
+                  "classId": "e_4",
+                  "part": "s1v1",
+                  "offsets": [
+                        {
+                              "start": 612,
+                              "text": "ts 36.300 [5]"
+                        }
+                  ],
+                  "coordinates": [],
+                  "confidence": {
+                        "state": "pre-added",
+                        "who": [
+                              "user:charan"
+                        ],
+                        "prob": 1
+                  },
+                  "fields": {},
+                  "normalizations": {}
             }
       ],
       "relations": []

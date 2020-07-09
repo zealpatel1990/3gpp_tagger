@@ -1,14 +1,18 @@
-[
-  {
-    "key": "Args"
-  },
-  {
-    "key": "Message"
-  },
-  {
-    "key": "Actor"
-  },
-  {
-    "key": "Reference"
-  }
-]
+{
+  "per_sentence": [
+    {
+      "key": "Args"
+    },
+    {
+      "key": "Message"
+    },
+    {
+      "key": "Actor"
+    }
+  ],
+  "whole_text": [
+    {
+      "key": "Reference"
+    }
+  ]
+}

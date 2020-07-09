@@ -16,17 +16,23 @@ class AutoTagProcessor:
         self.reference_entity_json = self.reference_json['entities'][0]
         self.reference_json['entities'].clear()
         self.entity_config = json.load(open(resolve_path_from_project_dir('configs/entity_configuration.json')))
-        self.rules_tagger = RulesTagger(self.priority_configs, self.rules_config)
+        self.sentence_tagger = RulesTagger(self.priority_configs['per_sentence'], self.rules_config)
+        self.whole_tagger = RulesTagger(self.priority_configs['whole_text'], self.rules_config)
 
     def tag_words(self):
         index = 0
+        # sentence level logic
         for each_sentence in self.input.split("."):
             self.tag_sentence(each_sentence, index)
             index = 1 + len(each_sentence)
+
+        # whole text level logic
+        annotation_list = self.whole_tagger.process_sentence(self.input, 0)
+        self.prepare_annotation_file(annotation_list)
         return self.write_annotation_text()
 
     def tag_sentence(self, each_sentence, index):
-        annotation_list = self.rules_tagger.process_sentence(each_sentence, index)
+        annotation_list = self.sentence_tagger.process_sentence(each_sentence, index)
         self.prepare_annotation_file(annotation_list)
 
     def prepare_annotation_file(self, annotation_list):
